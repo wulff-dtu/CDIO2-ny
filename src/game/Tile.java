@@ -2,12 +2,12 @@ package game;
 
 public class Tile {
 
-    private String name;
+    private String message;
     private int effectOnBalace;
     private boolean grantsExtraTurn;
 
-    public Tile(String name, int effectOnBalace, boolean grantsExtraTurn) {
-        this.name = name;
+    public Tile(String message, int effectOnBalace, boolean grantsExtraTurn) {
+        this.message = message;
         this.effectOnBalace = effectOnBalace;
         this.grantsExtraTurn = grantsExtraTurn;
     }
