@@ -9,7 +9,8 @@ class LanguageTest {
 
     @Test
     void getMessage() {
-        languageTest = new Language()
-
+        Language languageTest = new Language("EnGlIsH");
+        System.out.println(languageTest.getMessage("testmessage"));
+        assertEquals("yolo", languageTest.getMessage("testmessage"));
     }
 }
