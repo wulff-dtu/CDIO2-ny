@@ -1,12 +1,12 @@
 package game;
 
-import java.awt.datatransfer.Clipboard;
+//import java.awt.datatransfer.Clipboard;
 
 public class Game {
 
     private Player[] players;
     private Board board;
-    private DiceCup diceCup;
+    //private DiceCup diceCup;
     private Language language;
 
     // TODO make constructor
