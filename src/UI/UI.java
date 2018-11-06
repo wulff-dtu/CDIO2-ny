@@ -9,7 +9,6 @@ public class UI {
         System.out.println(language.getMessage("testmessage2")); //for at teste om det virker
     }
 
-
     public void setLanguage(String language) {
         this.language = new Language(language);
     }

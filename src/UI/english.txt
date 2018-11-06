@@ -1,4 +1,34 @@
-testmessage
-yolo
-testmessage2
-lol
+board_tower
+Yay, you found 250 in a tower. Getting richer!
+
+board_crater
+Oh no! You fell into a crater. -100.
+
+board_palace_gates
+You entered the palace gates and received 100! Good for you.
+
+board_cold_desert
+Uh, you landed in the cold desert. -20.
+
+board_walled_city
+You entered the walled city. Nice! You receive 180
+
+board_monastery
+You are passing some time in the monastery away from the trouble of the rest of the world. No effect on your economy.
+
+board_black_cave
+Oh no. You landed in the black cave. The cave
+monsters took 70.
+
+board_huts
+You found 60 in the huts in the mountain, hooray.
+
+board_werewall
+Oops, you touched the Werewall and the werewolf ate 80. You get to cast the dice again though.
+
+board_pit
+You fell into a pit and lost 50
+
+board_goldmine
+You found gold in the mountains and sell it for 650, you’re rich!
+

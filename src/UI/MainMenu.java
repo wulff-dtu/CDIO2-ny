@@ -1,9 +1,11 @@
-package game;
+package UI;
+
+import game.Language;
 
 public class MainMenu {
 
     public void displayMenu() {
-        Language langauage = new Language("english");
+        game.Language langauage = new Language("english");
         System.out.println();
         System.out.println();
     }

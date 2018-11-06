@@ -13,7 +13,7 @@ public class Language {
 
     /**
      * Searches language.txt for a certain messageID, i.e. "mainmenu3",
-     * and returns the corresponding message. Only works when language.txt is structured
+     * and returns the corresponding message, found on the next line. Only works when language.txt is structured
      * as one line of the messageID followed by one line of the actual message
      */
     public String getMessage(String textID) {
