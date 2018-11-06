@@ -4,11 +4,11 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class GameLanguage {
+public class Language {
 
     private String languagefile;
 
-    public GameLanguage(String language) {
+    public Language(String language) {
         this.languagefile = language.toLowerCase()+".txt";
     }
 
