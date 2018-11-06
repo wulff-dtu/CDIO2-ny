@@ -6,7 +6,8 @@ public class Game {
 
     private Player[] players;
     private Board board;
-    private DiceCup diceCup;
+    //private DiceCup diceCup;
+    private Language language;
 
     // TODO make constructor
     public Game(){
