@@ -17,6 +17,6 @@ public class Game {
     /**
      * Method that starts the game and is called by Main
      */
-    public void run(){
-
+    public void run() {
+    }
 }
