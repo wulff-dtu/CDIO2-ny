@@ -17,5 +17,7 @@ public class Game {
      * Method that starts the game and is called by Main
      */
     public void run() {
+        MainMenu mainMenu = new MainMenu();
+        mainMenu.displayMenu();
     }
 }
