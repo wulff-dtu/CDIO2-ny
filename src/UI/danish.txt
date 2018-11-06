@@ -1,0 +1,32 @@
+board_tower_message
+Yay, du fandt 250 I et tårn. Du bliver rigere!
+
+board_crater_message
+Åh nej! Du faldt ned i et krater. -100.
+
+board_palace_gates_message
+Du passerede paladsets porte og fik 100! Godt for dig.
+
+board_cold_desert_message
+Uh, du landede i den kolde ørken. -20.
+
+board_walled_city_message
+Du er gået ind i den indhegnede by. Nice! Du får 180.
+
+board_monastery_message
+Du fordriver tiden lidt i klosteret, væk fra resten af verdens problemer. Ingen effekt på din økonomi.
+
+board_black_cave_message
+Åh nej. Du landede i den sorte grotte. Grottemonstrene tog 70 fra dig.
+
+board_huts_message
+Du fandt 60 i hytterne på bjerget, hurra.
+
+board_werewall_message
+Ups, du rørte ved Varvæggen og varulven åd 80. Du får dog lov at kaste terningerne igen.
+
+board_pit_message
+Du faldt ned i en skakt og mistede 50
+
+board_goldmine_message
+Du har fundet guld i bjergene og sælger det for 650, du er rig!
