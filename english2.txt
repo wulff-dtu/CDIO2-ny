@@ -1,2 +1,4 @@
 testmessage
 yolo
+mainmenu1
+hej

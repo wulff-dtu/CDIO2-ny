@@ -1,6 +1,6 @@
 package game;
 
-//import java.awt.datatransfer.Clipboard;
+import java.awt.datatransfer.Clipboard;
 
 public class Game {
 

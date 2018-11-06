@@ -12,5 +12,6 @@ class LanguageTest {
         Language languageTest = new Language("EnGlIsH");
         System.out.println(languageTest.getMessage("testmessage"));
         assertEquals("yolo", languageTest.getMessage("testmessage"));
+
     }
 }
