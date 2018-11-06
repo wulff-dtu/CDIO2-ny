@@ -6,7 +6,7 @@ public class UI {
 
     public UI(){
         language = new Language("ENGLISH"); //English is the default language.
-        System.out.println(language.getMessage("board_goldmine")); //for at teste om det virker
+        System.out.println(language.getMessage("board_goldmine_message")); //for at teste om det virker
     }
 
     public void setLanguage(String language) {
