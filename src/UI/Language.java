@@ -6,9 +6,11 @@ import java.util.Scanner;
 public class Language {
 
     private File file;
+    private String currentLanguage;
 
     public Language(String language) {
         file = new File("src/UI/"+language.toLowerCase()+".txt");
+        currentLanguage = language;
     }
 
     /**
@@ -24,6 +26,7 @@ public class Language {
                 String line = scanner.nextLine();
                 if(line.equals(textID)) {
                     message = scanner.nextLine();
+                    break;
                 }
             }
             scanner.close();
@@ -31,5 +34,9 @@ public class Language {
             System.out.println("text not found in language file!");
         }
         return message;
+    }
+
+    public String getCurrentLanguage() {
+        return currentLanguage;
     }
 }
