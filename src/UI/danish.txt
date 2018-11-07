@@ -1,3 +1,18 @@
+main_menu_header
+Indtast for at vælge:
+
+main_menu_option1
+1. Start spillet.
+
+main_menu_option2
+2. Regler.
+
+main_menu_option3
+3. Sprog.
+
+main_menu_option4
+4. Forlad spillet.
+
 board_tower_message
 Yay, du fandt 250 I et tårn. Du bliver rigere!
 
