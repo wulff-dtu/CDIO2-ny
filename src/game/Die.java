@@ -7,6 +7,9 @@ public class Die {
     private int value;
     public String getValue;
 
+    public Die() {
+    }
+//TODO Check constructor
 
     public int getValue() {
         return value;
