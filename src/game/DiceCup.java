@@ -1,8 +1,31 @@
 package game;
 
 public class DiceCup {
-    private Die[] dice = {new Die(), new Die()};
-// kan nemt ændre listen af ternigner der skal bruges i bæret.
+
+    private Die[] dice;
+    private int sum;
+
+    public DiceCup(int numOfDice) {
+        dice = new Die[numOfDice];
+        for(int i = 0; i < numOfDice; i++) {
+            dice[i] = new Die(6);
+        }
+    }
+
+    //TODO add throwDice method.
+
+
+    public int getSum() {
+        return sum;
+    }
+}
+
+//mads¨ forslag nedenunder
+
+public class DiceCup {
+
+private Die[] dice = {new Die(), new Die()};
+
 
     public int getValue() {
         int sum = 0;
@@ -11,7 +34,7 @@ public class DiceCup {
         }
         return sum;
     }
-
+    // printRolls er egentlig bare en metode for getValue bare som string.
     public void printRolls() {
         for (Die d : dice) {
             System.out.print(d.getValue + " ");
@@ -26,4 +49,3 @@ public class DiceCup {
 
     }
 }
-
