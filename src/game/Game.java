@@ -28,4 +28,9 @@ public class Game {
      */
     public void run() {
     }
+
+    public DiceCup getDiceCup() {
+        return diceCup;
+    }
+
 }
