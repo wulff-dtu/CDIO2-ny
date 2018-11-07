@@ -28,4 +28,8 @@ public class UI {
     public void setLanguage(String language) {
         language.setLanguage;
     }
+
+    public Language getLanguage() {
+        return language;
+    }
 }

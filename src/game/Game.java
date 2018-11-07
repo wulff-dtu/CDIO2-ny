@@ -13,29 +13,47 @@ public class Game {
     }
 
     /**
-     * Method that sets up the game. Called via main menu (UI).
+     * Sets up the and ultimately runs the game. Called via main menu (UI).
      */
-    //Jeg har lige prøvet at få spillet til at køre, på den måde jeg lige kunne finde ud af. Kan sagtens ændres.
-    public void setupGame(String[] playerNames, Language language, UI ui){
+    public void setupGame(String[] playerNames, UI ui){
 
         players = new Player[playerNames.length];
         for (int i = 0; i < playerNames.length; i++) {
             players[i] = new Player(playerNames[i]);
         }
-        board = new Board(language); //er der nogen grund til at kalde med language
-                                     //eller kan det lige så godt tilgås gennem ui?
-        diceCup = new DiceCup(2);
+        board = new Board(ui.getLanguage());
         this.ui = ui;
-        runGame();
+
+        runGame(this);
     }
 
-    private void runGame() {
-        //logik
-        runTurn(player);
+    /**
+     * Keeps running turns until a winner is found.
+     */
+    private void runGame(Game game) {
+        boolean winnerFound = false;
+        int currentPlayerArrayIndexNo = 0; //Players[0] always goes first.
+        do {
+            runTurn(players[currentPlayerArrayIndexNo], this);
+
+            if (players[currentPlayerArrayIndexNo].getBankroll.getBankroll >= 3000) { //TODO hvad hedder metoden?
+                winnerFound = true; //TODO hvad skal der ellers stå her?
+            } else {
+                switch (currentPlayerArrayIndexNo) { //er der en mere elegant måde at gøre dette på?
+                    case 0:
+                        currentPlayerArrayIndexNo = 1;
+                        break;
+                    case 1:
+                        currentPlayerArrayIndexNo = 0;
+                        break;
+                }
+            }
+
+        } while (!winnerFound);
     }
 
-    private void runTurn(Player player) {
-        Turn turn = new Turn(player, this);
+    private void runTurn(Player player, Game game) {
+        new Turn(player, game); //TODO er det her nok?
     }
 
     public DiceCup getDiceCup() {

@@ -1,5 +1,7 @@
 package game;
 
+import UI.Language;
+
 public class Board {
 
     private Tile[] tiles;

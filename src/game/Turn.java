@@ -5,10 +5,10 @@ public class Turn {
     private int diceValue;
     private Game game;
 
-    public Turn(Player currentPlayer, Game game) {
+    public Turn(Player player, Game game) {
         this.game = game;
 
-        int input = game.getUI().turnMenu(currentPlayer);
+        int input = game.getUI().turnMenu(player);
         switch (input) {
             case 1:
                 diceValue = game.getDiceCup().throwDice();
