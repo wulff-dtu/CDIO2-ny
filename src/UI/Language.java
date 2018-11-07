@@ -8,7 +8,7 @@ public class Language {
     private File file;
 
     public Language(String language) {
-        file = new File("src/UI/" + language.toLowerCase()+".txt");
+        file = new File("src/UI/"+language.toLowerCase()+".txt");
     }
 
     /**

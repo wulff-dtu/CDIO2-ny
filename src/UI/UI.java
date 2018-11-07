@@ -1,15 +1,18 @@
 package UI;
 
+import game.Game;
+
 public class UI {
 
-    Language language;
+    private Language language;
+    private Game game;
 
     public UI(){
         language = new Language("ENGLISH"); //English is the default language.
-        System.out.println(language.getMessage("board_goldmine_message")); //for at teste om det virker
+        game = new Game();
     }
 
     public void setLanguage(String language) {
-        this.language = new Language(language);
+        language.setLanguage;
     }
 }
