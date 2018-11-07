@@ -1,16 +1,25 @@
 package game;
 
-import java.awt.datatransfer.Clipboard;
-
 public class Game {
 
     private Player[] players;
     private Board board;
-    //private DiceCup diceCup;
+    private DiceCup diceCup;
     private Language language;
 
-    // TODO make constructor
-    public Game(){
+    // TODO finish constructor
+    public Game(String[] playerNames, Language language){
+
+        players = new Player[playerNames.length];
+        for (int i = 0; i < playerNames.length; i++) {
+            players[i] = new Player(playerNames[i]);
+        }
+
+        board = new Board(language);
+        diceCup = new DiceCup(2);
+        this.language = language;
+
+
     }
 
 
@@ -21,4 +30,9 @@ public class Game {
         MainMenu mainMenu = new MainMenu();
         mainMenu.displayMenu();
     }
+
+    public DiceCup getDiceCup() {
+        return diceCup;
+    }
+
 }

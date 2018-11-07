@@ -2,13 +2,13 @@ package game;
 
 public class Tile {
 
-    private String name;
-    private int effectOnBalace;
+    private String message;
+    private int effectOnBalance;
     private boolean grantsExtraTurn;
 
-    public Tile(String name, int effectOnBalace, boolean grantsExtraTurn) {
-        this.name = name;
-        this.effectOnBalace = effectOnBalace;
+    public Tile(String message, int effectOnBalance, boolean grantsExtraTurn) {
+        this.message = message;
+        this.effectOnBalance = effectOnBalance;
         this.grantsExtraTurn = grantsExtraTurn;
     }
 

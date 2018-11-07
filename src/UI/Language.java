@@ -20,10 +20,8 @@ public class Language {
         String message = "";
         try {
             Scanner scanner = new Scanner(file);
-            int lineNum = 0;
             while (scanner.hasNextLine()) {
                 String line = scanner.nextLine();
-                lineNum++;
                 if(line.equals(textID)) {
                     message = scanner.nextLine();
                 }
