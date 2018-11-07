@@ -12,8 +12,11 @@ public class DiceCup {
         }
     }
 
-    //TODO add throwDice method.
-
+    //TODO add throwDice method.//har kastet en throwDice ind fra mit forslag(mads)
+    public void throwDice() {
+        for (int i = 0; i < dice.length; i++) {
+            dice[i].throwDie();}
+        }
 
     public int getSum() {
         return sum;
@@ -34,7 +37,8 @@ private Die[] dice = {new Die(), new Die()};
         }
         return sum;
     }
-    // printRolls er egentlig bare en metode for getValue bare som string.
+
+
     public void printRolls() {
         for (Die d : dice) {
             System.out.print(d.getValue + " ");
