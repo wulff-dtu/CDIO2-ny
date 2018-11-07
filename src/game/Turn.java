@@ -2,9 +2,11 @@ package game;
 
 public class Turn {
 
-    public Turn(Player currentPlayer, Game currentGame) {
-        Game game = currentGame;
-        int diceValue;
+    private int diceValue;
+    private Game game;
+
+    public Turn(Player currentPlayer, Game game) {
+        this.game = game;
 
         int input = game.getUI().turnMenu(currentPlayer);
         switch (input) {
@@ -12,7 +14,7 @@ public class Turn {
                 diceValue = game.getDiceCup().throwDice();
                 break;
             case 2:
-                game.getUI().closeGame();
+                game.getUI().endGame();
                 break;
             case 3:
                 //se stilling
@@ -21,6 +23,11 @@ public class Turn {
                 break;
         }
 
+        diceRollEffect(diceValue, game.);
+    }
+
+    private void diceRollEffect(int diceValue, Player player) {
+        //TODO
 
     }
 

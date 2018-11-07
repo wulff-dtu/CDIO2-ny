@@ -21,6 +21,10 @@ public class UI {
         return 0;
     }
 
+    public void endGame() {
+        System.out.println(language.getMessage("end_game_message")); //tilføj besked
+    }
+
     public void setLanguage(String language) {
         language.setLanguage;
     }
