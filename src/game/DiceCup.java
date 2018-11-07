@@ -1,7 +1,8 @@
 package game;
 
-public class DiceCup {private Die[] dice = {new Die(), new Die()};
-
+public class DiceCup {
+    private Die[] dice = {new Die(), new Die()};
+// kan nemt ændre listen af ternigner der skal bruges i bæret.
 
     public int getValue() {
         int sum = 0;
