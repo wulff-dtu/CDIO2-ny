@@ -1,5 +1,5 @@
 package game;
-
+/*
 public class DiceCup {
 
     private Die[] dice;
@@ -26,7 +26,7 @@ public class DiceCup {
     public int getSum() {
         return sum;
     }
-}
+}*/
 
 //mads¨ forslag nedenunder
 
