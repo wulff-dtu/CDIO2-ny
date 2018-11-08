@@ -31,7 +31,10 @@ public class UI {
                 this.game.setupGame();
                 break;
             case 2:     //user chooses to read rules
-                System.out.println(language.getMessage("rules"));
+                System.out.println(language.getMessage("rules1"));
+                System.out.println(language.getMessage("rules2"));
+                System.out.println(language.getMessage("rules3"));
+                System.out.println(language.getMessage("rules4"));
                 System.out.println();
                 mainMenu();
                 break;
