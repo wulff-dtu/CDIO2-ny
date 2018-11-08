@@ -62,4 +62,8 @@ board_goldmine_message
 Du har fundet guld i bjergene og sælger det for 650, du er rig!
 
 regler
-Spillerne slår på skift med 2 terninger og lander på et felt med numrene fra 2 - 12. At lande på hvert af disse felter har en positiv eller negativ effekt på spillernes pengebeholdning. Der udskrives en kort tekst om det aktuelle felt. Spillerne begynder spillet med en pengebeholdning på 1000. En spiller vinder spillet ved at nå 3000.
+Spillerne slår på skift med 2 terninger og lander på et felt med numrene fra 2 - 12. 
+At lande på hvert af disse felter har en positiv eller negativ effekt på spillernes pengebeholdning. 
+Der udskrives en kort tekst om det aktuelle felt. 
+Spillerne begynder spillet med en pengebeholdning på 1000. 
+En spiller vinder spillet ved at nå 3000.
