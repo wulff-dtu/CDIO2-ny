@@ -8,13 +8,13 @@ public class Turn {
     public Turn(Player player, Game game) {
         this.game = game;
 
-        int input = game.getUI().turnMenu(player);
+        int input = this.game.getUI().turnMenu(player);
         switch (input) {
             case 1:
-                diceValue = game.getDiceCup().throwDice();
+                diceValue = this.game.getDiceCup().throwDice();
                 break;
             case 2:
-                game.endGame();
+                this.game.endGame();
                 break;
             case 3:
                 //se stilling
