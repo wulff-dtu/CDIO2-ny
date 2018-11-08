@@ -8,5 +8,6 @@ public class MainMenu {
         System.out.println(ui.getLanguage().getMessage("main_menu_option2"));
         System.out.println(ui.getLanguage().getMessage("main_menu_option3"));
         System.out.println(ui.getLanguage().getMessage("main_menu_option4"));
+        System.out.println();
     }
 }

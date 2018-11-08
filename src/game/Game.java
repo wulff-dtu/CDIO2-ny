@@ -60,6 +60,7 @@ public class Game {
 
     public void endGame() {
         System.out.println(ui.getLanguage().getMessage("end_game_message"));
+        System.out.println();
     }
 
     public DiceCup getDiceCup() {

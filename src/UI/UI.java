@@ -31,11 +31,13 @@ public class UI {
                 this.game.setupGame();
                 break;
             case 2:     //user chooses to read rules
-                System.out.println(language.getMessage("SOMETHING")); //TODO
+                System.out.println(language.getMessage("rules"));
+                System.out.println();
                 mainMenu();
                 break;
             case 3:     //user chooses to change the language
-                System.out.println(language.getMessage("SOMETHING")); //TODO
+                System.out.println(language.getMessage("change_language"));
+                System.out.println();
                 String newLanguage = scanner.next();
                 language.setCurrentLanguage(newLanguage);
                 mainMenu();
@@ -44,7 +46,8 @@ public class UI {
                 scanner.close();
                 System.exit(0);
             default:    //input not recognized
-                System.out.println(language.getMessage("SOMETHING"));
+                System.out.println(language.getMessage("input_error"));
+                System.out.println();
                 mainMenu();
                 break;
         }
