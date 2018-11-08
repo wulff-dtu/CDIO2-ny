@@ -3,12 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2fa882d3-0fc9-4680-beaa-19233bbf1948" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Language.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Turn.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,13 +42,13 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="java" value="2822" />
-          <entry key="txt" value="197" />
+          <entry key="txt" value="642" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="JAVA" value="2822" />
-          <entry key="PLAIN_TEXT" value="197" />
+          <entry key="PLAIN_TEXT" value="642" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -65,7 +59,7 @@
       </usages-collector>
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -107,7 +101,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/game/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
+            <state relative-caret-position="204">
               <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
               <folding>
                 <element signature="e#1515#1516#0" expanded="true" />
@@ -208,7 +202,7 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="960" />
     <option name="width" value="960" />
-    <option name="height" value="1033" />
+    <option name="height" value="1034" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -250,7 +244,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541620889057" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541621405989" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -275,7 +269,7 @@
       <option name="presentableId" value="Default" />
       <updated>1541574795001</updated>
       <workItem from="1541574796142" duration="6697000" />
-      <workItem from="1541617925152" duration="3155000" />
+      <workItem from="1541617925152" duration="3530000" />
     </task>
     <task id="LOCAL-00001" summary="mads commit">
       <created>1541581683670</created>
@@ -319,11 +313,18 @@
       <option name="project" value="LOCAL" />
       <updated>1541615878268</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="I denne branch kører spillet ca. sådan her:&#10;- Main laver et UI (der laver en Game, der ikke indeholder noget)&#10;- Main får UI til at køre en mainMenu-metode&#10;- når &quot;start spillet&quot; vælges, køres setupGame i den Game, der blev lavet af UI&#10;- derefter køres runGame, der looper ved at lave ture, indtil der er fundet en vinder&#10;&#10;Det er som sagt bare et forslag. Der er sikkert flere ting, der kan gøres bedre og mere rigtigt">
+      <created>1541621356674</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1541621356674</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16043000" />
+    <option name="totallyTimeSpent" value="16418000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -336,7 +337,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.36158192" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -408,7 +408,8 @@
     <MESSAGE value="mads commit" />
     <MESSAGE value="Første commit. Har prøvet at lave lidt logik ift. start af programmet sådan som jeg lige kunne finde ud af. Ny branch fordi jeg lige tester nogle ting og ikke vil ødelægge det gamle" />
     <MESSAGE value="Har prøvet at lave lidt logik ift. start af programmet sådan som jeg lige kunne finde ud af. Ny branch fordi jeg lige tester nogle ting og ikke vil ødelægge det gamle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Har prøvet at lave lidt logik ift. start af programmet sådan som jeg lige kunne finde ud af. Ny branch fordi jeg lige tester nogle ting og ikke vil ødelægge det gamle" />
+    <MESSAGE value="I denne branch kører spillet ca. sådan her:&#10;- Main laver et UI (der laver en Game, der ikke indeholder noget)&#10;- Main får UI til at køre en mainMenu-metode&#10;- når &quot;start spillet&quot; vælges, køres setupGame i den Game, der blev lavet af UI&#10;- derefter køres runGame, der looper ved at lave ture, indtil der er fundet en vinder&#10;&#10;Det er som sagt bare et forslag. Der er sikkert flere ting, der kan gøres bedre og mere rigtigt" />
+    <option name="LAST_COMMIT_MESSAGE" value="I denne branch kører spillet ca. sådan her:&#10;- Main laver et UI (der laver en Game, der ikke indeholder noget)&#10;- Main får UI til at køre en mainMenu-metode&#10;- når &quot;start spillet&quot; vælges, køres setupGame i den Game, der blev lavet af UI&#10;- derefter køres runGame, der looper ved at lave ture, indtil der er fundet en vinder&#10;&#10;Det er som sagt bare et forslag. Der er sikkert flere ting, der kan gøres bedre og mere rigtigt" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/UI/inputValidator.java">
@@ -535,7 +536,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
+        <state relative-caret-position="204">
           <caret line="39" column="72" selection-start-line="39" selection-start-column="72" selection-end-line="39" selection-end-column="72" />
           <folding>
             <element signature="e#1515#1516#0" expanded="true" />

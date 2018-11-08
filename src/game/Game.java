@@ -9,20 +9,20 @@ public class Game {
     private DiceCup diceCup;
     private UI ui;
 
-    public Game() {
+    public Game(UI ui) {
+        this.ui = ui;
     }
 
     /**
      * Sets up the and ultimately runs the game. Called via main menu (UI).
      */
-    public void setupGame(String[] playerNames, UI ui){
+    public void setupGame(String[] playerNames){
 
         players = new Player[playerNames.length];
         for (int i = 0; i < playerNames.length; i++) {
             players[i] = new Player(playerNames[i]);
         }
         board = new Board(ui.getLanguage());
-        this.ui = ui;
 
         runGame(this);
     }
