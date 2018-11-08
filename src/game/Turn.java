@@ -17,7 +17,7 @@ public class Turn {
                 this.game.endGame();
                 break;
             case 3:
-                //se stilling
+                game.getPlayers();
                 break;
             default:
                 break;
@@ -30,7 +30,7 @@ public class Turn {
         /*ChangeBankRoll skal laves om*/
     switch(diceValue){
         case 1:
-            System.out.println("error in diceRollEffect - you can not role a 1");
+            System.out.println("error in diceRollEffect - you can not roll a 1");
             break;
         case 2:
             //Tower 		+250
@@ -45,7 +45,7 @@ public class Turn {
             player.getBankroll().setBalance(100);
             break;
         case 5:
-            //Cold Desert	 	-20
+            //Cold desert	 	-20
             player.getBankroll().setBalance(-20);
             break;
         case 6:

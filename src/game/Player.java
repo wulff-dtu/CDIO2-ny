@@ -7,10 +7,15 @@ public class Player {
 
     public Player(String name) {
         this.name = name;
+        bankroll = new Bankroll();
     }
 
     public Bankroll getBankroll() {
         return bankroll;
+    }
+
+    public String getName() {
+        return name;
     }
 /* denne funktion skal slettes - fungerer som placeholder for camilla te's dims
     public int getBankroll().setBalance(int change){

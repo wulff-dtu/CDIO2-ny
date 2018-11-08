@@ -14,7 +14,7 @@ main_menu_option4
 4. Exit.
 
 turn_menu_header
-Type to choose:
+, type to choose:
 
 turn_menu_option1
 1. Roll the dice.

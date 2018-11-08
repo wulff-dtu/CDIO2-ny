@@ -11,7 +11,7 @@ public class UI {
     private Game game;
 
     public UI(){
-        language = new Language("ENGLISH"); //English is the default language.
+        language = new Language("english"); //English is the default language.
         game = new Game(this);
     }
 
@@ -31,18 +31,13 @@ public class UI {
                 this.game.setupGame();
                 break;
             case 2:     //user chooses to read rules
-                System.out.println(language.getMessage("rules1"));
-                System.out.println(language.getMessage("rules2"));
-                System.out.println(language.getMessage("rules3"));
-                System.out.println(language.getMessage("rules4"));
-                System.out.println();
+                showRules();
                 mainMenu();
                 break;
             case 3:     //user chooses to change the language
-                System.out.println(language.getMessage("change_language"));
-                System.out.println();
+                languagePrompt();
                 String newLanguage = scanner.next();
-                language.setCurrentLanguage(newLanguage);
+                language.setCurrentLanguage(newLanguage); //TODO virker ikke
                 mainMenu();
                 break;
             case 4:     //user closes program
@@ -58,14 +53,33 @@ public class UI {
 
     public int turnMenu(Player player) {
         TurnMenu menu = new TurnMenu();
-        menu.displayMenu(this);
+        menu.displayMenu(this, player);
 
         int input;
         Scanner scanner = new Scanner(System.in);
         input = scanner.nextInt();
-        scanner.close();
 
         return input;
+    }
+
+    public void showRules() {
+        System.out.println();
+        System.out.println(language.getMessage("rules1"));
+        System.out.println(language.getMessage("rules2"));
+        System.out.println(language.getMessage("rules3"));
+        System.out.println(language.getMessage("rules4"));
+        System.out.println();
+    }
+
+    public void languagePrompt() {
+        System.out.println(language.getMessage("change_language"));
+    }
+
+    public void showScore(Game game) {
+        for (int i=0; i < game.getPlayers().length; i++){
+            System.out.println(game.getPlayers()[i].getName() + ": " + game.getPlayers()[i].getBankroll().getBalance());
+        }
+
     }
 
     public Language getLanguage() {

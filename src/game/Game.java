@@ -25,6 +25,7 @@ public class Game {
         players[1] = player2;
 
         board = new Board(ui.getLanguage());
+        diceCup = new DiceCup(2);
 
         runGame(this);
     }
@@ -34,11 +35,11 @@ public class Game {
      */
     private void runGame(Game game) {
         boolean winnerFound = false;
-        int currentPlayerArrayIndex = 0; //Players[0] always goes first.
+        int currentPlayerArrayIndex = 0; //players[0] always goes first.
         do {
             runTurn(players[currentPlayerArrayIndex], this);
 
-            if (players[currentPlayerArrayIndex].getBankroll().getBalance() >= 3000) { //TODO hvad hedder metoden?
+            if (players[currentPlayerArrayIndex].getBankroll().getBalance() >= 3000) {
                 winnerFound = true;
                 game.endGame();
             } else {
@@ -69,5 +70,9 @@ public class Game {
 
     public UI getUI() {
         return ui;
+    }
+
+    public Player[] getPlayers() {
+        return players;
     }
 }

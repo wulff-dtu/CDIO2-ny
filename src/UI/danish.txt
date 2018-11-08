@@ -14,7 +14,7 @@ main_menu_option4
 4. Forlad spillet.
 
 turn_menu_header
-Tast for at vælge:
+, tast for at vælge:
 
 turn_menu_option1
 1. Kast terningerne.
