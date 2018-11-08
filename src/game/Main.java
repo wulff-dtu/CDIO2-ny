@@ -6,6 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
         UI ui = new UI();
-        //ui skal herefter vise mainmenu
+        ui.mainMenu();
     }
 }

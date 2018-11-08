@@ -36,7 +36,11 @@ public class Language {
         return message;
     }
 
-    public String getCurrentLanguage() {
+    public void setCurrentLanguage(String newLanguage) {
+        currentLanguage = newLanguage;
+    }
+
+    public String toString() {
         return currentLanguage;
     }
 }

@@ -9,9 +9,8 @@ public class Player {
         this.name = name;
     }
 
-
     public Bankroll getBankroll() {
-        return bankroll;
+        return bankroll.getBalance;
     }
 /* denne funktion skal slettes - fungerer som placeholder for camilla te's dims
     public int getBankroll().setBalance(int change){

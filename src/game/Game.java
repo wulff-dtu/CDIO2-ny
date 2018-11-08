@@ -16,12 +16,12 @@ public class Game {
     /**
      * Sets up the and ultimately runs the game. Called via main menu (UI).
      */
-    public void setupGame(String[] playerNames){
+    public void setupGame(){
 
-        players = new Player[playerNames.length];
-        for (int i = 0; i < playerNames.length; i++) {
-            players[i] = new Player(playerNames[i]);
-        }
+        Player player1 = new Player("player1");
+        Player player2 = new Player("player2");
+        players = {player1, player2}; //TODO sæt array op med player1 og 2
+
         board = new Board(ui.getLanguage());
 
         runGame(this);
@@ -32,28 +32,34 @@ public class Game {
      */
     private void runGame(Game game) {
         boolean winnerFound = false;
-        int currentPlayerArrayIndexNo = 0; //Players[0] always goes first.
+        int currentPlayerArrayIndex = 0; //Players[0] always goes first.
         do {
-            runTurn(players[currentPlayerArrayIndexNo], this);
+            runTurn(players[currentPlayerArrayIndex], this);
 
+            if (players[currentPlayerArrayIndex].getBankroll.getBalance >= 3000) { //TODO hvad hedder metoden?
+                winnerFound = true;
+                game.endGame();
             if (players[currentPlayerArrayIndexNo].getBankroll().getBalance() >= 3000) { //TODO hvad hedder metoden?
                 winnerFound = true; //TODO hvad skal der ellers stå her?
             } else {
-                switch (currentPlayerArrayIndexNo) { //er der en mere elegant måde at gøre dette på?
+                switch (currentPlayerArrayIndex) { //er der en mere elegant måde at gøre dette på?
                     case 0:
-                        currentPlayerArrayIndexNo = 1;
+                        currentPlayerArrayIndex = 1;
                         break;
                     case 1:
-                        currentPlayerArrayIndexNo = 0;
+                        currentPlayerArrayIndex = 0;
                         break;
                 }
             }
-
         } while (!winnerFound);
     }
 
     private void runTurn(Player player, Game game) {
         new Turn(player, game); //TODO er det her nok?
+    }
+
+    public void endGame() {
+        System.out.println(ui.getLanguage().getMessage("end_game_message"));
     }
 
     public DiceCup getDiceCup() {

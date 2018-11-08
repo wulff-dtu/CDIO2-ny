@@ -13,6 +13,21 @@ main_menu_option3
 main_menu_option4
 4. Exit.
 
+turn_menu_header
+Type to choose:
+
+turn_menu_option1
+1. Roll the dice.
+
+turn_menu_option2
+2. Give up.
+
+turn_menu_option3
+3. Check the score.
+
+end_game_message
+The game is over.
+
 board_tower_message
 Yay, you found 250 in a tower. Getting richer!
 
