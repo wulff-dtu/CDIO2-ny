@@ -20,7 +20,9 @@ public class Game {
 
         Player player1 = new Player("player1");
         Player player2 = new Player("player2");
-        players = {player1, player2}; //TODO sæt array op med player1 og 2
+        players = new Player[2];
+        players[0] = player1;
+        players[1] = player2;
 
         board = new Board(ui.getLanguage());
 
@@ -36,11 +38,9 @@ public class Game {
         do {
             runTurn(players[currentPlayerArrayIndex], this);
 
-            if (players[currentPlayerArrayIndex].getBankroll.getBalance >= 3000) { //TODO hvad hedder metoden?
+            if (players[currentPlayerArrayIndex].getBankroll().getBalance() >= 3000) { //TODO hvad hedder metoden?
                 winnerFound = true;
                 game.endGame();
-            if (players[currentPlayerArrayIndexNo].getBankroll().getBalance() >= 3000) { //TODO hvad hedder metoden?
-                winnerFound = true; //TODO hvad skal der ellers stå her?
             } else {
                 switch (currentPlayerArrayIndex) { //er der en mere elegant måde at gøre dette på?
                     case 0:
