@@ -28,7 +28,7 @@ public class UI {
 
         switch (input) {
             case 1:     //user chooses to play a game
-                game.setupGame();
+                this.game.setupGame();
                 break;
             case 2:     //user chooses to read rules
                 System.out.println(language.getMessage("rules"));
