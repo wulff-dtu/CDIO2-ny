@@ -26,38 +26,38 @@ public class Turn {
         switch(diceValue){
             case 2:
                 //Tower 		+250
-                player.getBankroll().setBalance(250);
+                player.getBankroll().adjustBalance(250);
                 break;
             case 3:
                 //Crater 		-100
-                player.getBankroll().setBalance(-100);
+                player.getBankroll().adjustBalance(-100);
                 break;
             case 4:
                 //Palace gates		+100
-                player.getBankroll().setBalance(100);
+                player.getBankroll().adjustBalance(100);
                 break;
             case 5:
                 //Cold desert	 	-20
-                player.getBankroll().setBalance(-20);
+                player.getBankroll().adjustBalance(-20);
                 break;
             case 6:
-                player.getBankroll().setBalance(180);
+                player.getBankroll().adjustBalance(180);
                 //Walled city 		+180
                 break;
             case 7:
-                player.getBankroll().setBalance(0);
+                player.getBankroll().adjustBalance(0);
                 //Monastery 		0
                 break;
             case 8:
-                player.getBankroll().setBalance(-70);
+                player.getBankroll().adjustBalance(-70);
                 //Black cave 		-70
                 break;
             case 9:
-                player.getBankroll().setBalance(60);
+                player.getBankroll().adjustBalance(60);
                 //Huts in the mountain 		+60
                 break;
             case 10:
-                player.getBankroll().setBalance(-80);
+                player.getBankroll().adjustBalance(-80);
                 /* den neden under skal nok erstattes med en diceroll function*/
                 int r = (int) (Math.random() * (12 - 2)) + 2;
                 diceRollEffect(r, player, board);
@@ -65,11 +65,11 @@ public class Turn {
                 break;
             case 11:
                     //The pit 		-50
-                player.getBankroll().setBalance(-50);
+                player.getBankroll().adjustBalance(-50);
                 break;
             case 12:
             //Goldmine 		+650
-                player.getBankroll().setBalance(650);
+                player.getBankroll().adjustBalance(650);
                 break;
         }
     }

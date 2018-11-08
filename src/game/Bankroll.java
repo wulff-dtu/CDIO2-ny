@@ -17,8 +17,8 @@ public class Bankroll {
         }
     }
 
-    public void setBalance(int change){
-        this.balance = this.balance - change;
+    public void adjustBalance(int change){
+        this.balance -= change;
         checkIfBalanceBelowZero();
     }
 

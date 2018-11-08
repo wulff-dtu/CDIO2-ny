@@ -18,7 +18,7 @@ public class Player {
         return name;
     }
 /* denne funktion skal slettes - fungerer som placeholder for camilla te's dims
-    public int getBankroll().setBalance(int change){
+    public int getBankroll().adjustBalance(int change){
         return change;
 
     }*/
