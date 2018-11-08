@@ -34,38 +34,38 @@ public class Turn {
             break;
         case 2:
             //Tower 		+250
-            player.ChangeBankRoll(250);
+            player.getBankroll().setBalance(250);
             break;
         case 3:
             //Crater 		-100
-            player.ChangeBankRoll(-100);
+            player.getBankroll().setBalance(-100);
             break;
         case 4:
             //Palace gates		+100
-            player.ChangeBankRoll(100);
+            player.getBankroll().setBalance(100);
             break;
         case 5:
             //Cold Desert	 	-20
-            player.ChangeBankRoll(-20);
+            player.getBankroll().setBalance(-20);
             break;
         case 6:
-            player.ChangeBankRoll(180);
+            player.getBankroll().setBalance(180);
             //Walled city 		+180
             break;
         case 7:
-            player.ChangeBankRoll(0);
+            player.getBankroll().setBalance(0);
             //Monastery 		0
             break;
         case 8:
-            player.ChangeBankRoll(-70);
+            player.getBankroll().setBalance(-70);
             //Black cave 		-70
             break;
         case 9:
-            player.ChangeBankRoll(60);
+            player.getBankroll().setBalance(60);
             //Huts in the mountain 		+60
             break;
         case 10:
-            player.ChangeBankRoll(-80);
+            player.getBankroll().setBalance(-80);
             /* den neden under skal nok erstattes med en diceroll function*/
             int r = (int) (Math.random() * (12 - 2)) + 2;
             diceRollEffect(r, player);
@@ -73,11 +73,11 @@ public class Turn {
             break;
         case 11:
                 //The pit 		-50
-            player.ChangeBankRoll(-50);
+            player.getBankroll().setBalance(-50);
             break;
         case 12:
         //Goldmine 		+650
-            player.ChangeBankRoll(650);
+            player.getBankroll().setBalance(650);
             break;}
     }
 
