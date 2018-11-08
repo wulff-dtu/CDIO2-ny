@@ -46,7 +46,7 @@ public class UI {
             case 4:     //user closes program
                 scanner.close();
                 System.exit(0);
-            default:
+            default:    //input not recognized
                 System.out.println(language.getMessage("SOMETHING"));
                 mainMenu();
                 break;
