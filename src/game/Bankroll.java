@@ -4,11 +4,18 @@ public class Bankroll {
 
     private int balance;
 
-    //The game starts with each player having 1000 and the bankroll can't be negative
+    //The game starts with each player having 1000 
 
+    public Bankroll() {
+        balance = 1000;
+    }
+    
+    //The bankroll can't be negative
+    
+    
     public void changeBalance(){
 
-        balance = 1000;
+
         if(balance < 0 ){
 
             balance = 0;
@@ -17,13 +24,11 @@ public class Bankroll {
     }
 
     //Get balance
-
-    public Bankroll(){}
-
+    
+    
     public int getBalance() {
 
             return balance;
-    }    
-
+    }
 
 }
