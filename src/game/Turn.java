@@ -23,7 +23,7 @@ public class Turn {
                 break;
         }
 
-        diceRollEffect(diceValue, game.);
+        diceRollEffect(diceValue, player);
     }
 
     private void diceRollEffect(int diceValue, Player player) {

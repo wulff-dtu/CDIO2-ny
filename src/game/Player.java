@@ -9,8 +9,7 @@ public class Player {
         this.name = name;
     }
 
-
     public Bankroll getBankroll() {
-        return bankroll;
+        return bankroll.getBalance;
     }
 }

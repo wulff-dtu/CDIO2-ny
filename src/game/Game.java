@@ -16,9 +16,9 @@ public class Game {
     /**
      * Sets up the and ultimately runs the game. Called via main menu (UI).
      */
-    public void setupGame(String[] playerNames){
+    public void setupGame(){
 
-        players = new Player[playerNames.length];
+        players = new Player[playerNames.length]; //skal bare sætte navnene til player1 og player2
         for (int i = 0; i < playerNames.length; i++) {
             players[i] = new Player(playerNames[i]);
         }
