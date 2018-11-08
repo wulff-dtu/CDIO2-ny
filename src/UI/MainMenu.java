@@ -1,7 +1,5 @@
 package UI;
 
-import game.Language;
-
 public class MainMenu {
 
     public void displayMenu(UI ui) {

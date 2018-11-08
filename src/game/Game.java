@@ -37,7 +37,8 @@ public class Game {
             runTurn(players[currentPlayerArrayIndex], this);
 
             if (players[currentPlayerArrayIndex].getBankroll.getBalance >= 3000) { //TODO hvad hedder metoden?
-                winnerFound = true; //TODO hvad skal der ellers stå her?
+                winnerFound = true;
+                game.endGame();
             } else {
                 switch (currentPlayerArrayIndex) { //er der en mere elegant måde at gøre dette på?
                     case 0:
@@ -48,12 +49,15 @@ public class Game {
                         break;
                 }
             }
-
         } while (!winnerFound);
     }
 
     private void runTurn(Player player, Game game) {
         new Turn(player, game); //TODO er det her nok?
+    }
+
+    public void endGame() {
+        System.out.println(ui.getLanguage().getMessage("end_game_message"));
     }
 
     public DiceCup getDiceCup() {

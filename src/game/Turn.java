@@ -14,7 +14,7 @@ public class Turn {
                 diceValue = game.getDiceCup().throwDice();
                 break;
             case 2:
-                game.getUI().endGame();
+                game.endGame();
                 break;
             case 3:
                 //se stilling

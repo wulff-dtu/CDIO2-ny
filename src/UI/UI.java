@@ -54,15 +54,15 @@ public class UI {
     }
 
     public int turnMenu(Player player) {
-        return 0;
-    }
+        TurnMenu menu = new TurnMenu();
+        menu.displayMenu(this);
 
-    public void endGame() {
-        System.out.println(language.getMessage("end_game_message")); //tilføj besked
-    }
+        int input;
+        Scanner scanner = new Scanner(System.in);
+        input = scanner.nextInt();
+        scanner.close();
 
-    public void setLanguage(String language) {
-        language.setLanguage;
+        return input;
     }
 
     public Language getLanguage() {
