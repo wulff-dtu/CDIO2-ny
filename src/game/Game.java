@@ -36,7 +36,7 @@ public class Game {
         do {
             runTurn(players[currentPlayerArrayIndexNo], this);
 
-            if (players[currentPlayerArrayIndexNo].getBankroll.getBankroll >= 3000) { //TODO hvad hedder metoden?
+            if (players[currentPlayerArrayIndexNo].getBankroll().getBalance() >= 3000) { //TODO hvad hedder metoden?
                 winnerFound = true; //TODO hvad skal der ellers stå her?
             } else {
                 switch (currentPlayerArrayIndexNo) { //er der en mere elegant måde at gøre dette på?
