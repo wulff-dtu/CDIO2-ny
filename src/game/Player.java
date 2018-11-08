@@ -10,7 +10,7 @@ public class Player {
     }
 
     public Bankroll getBankroll() {
-        return bankroll.getBalance;
+        return bankroll;
     }
 /* denne funktion skal slettes - fungerer som placeholder for camilla te's dims
     public int getBankroll().setBalance(int change){
