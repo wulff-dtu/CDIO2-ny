@@ -15,9 +15,10 @@ public class Die {
         return value;
     }
 
-    public void throwDie() {
-        Random rand = new Random();
+    public int throwDie() {
         // Numbers of sides on the Die is set below this line
-        value = rand.nextInt(6) + 1;
+       int r = (int) (Math.random() * ( 6- 1)) + 1;;
+       this.value = r;
+       return value;
     }
 }
