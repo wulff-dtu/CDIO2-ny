@@ -4,31 +4,27 @@ public class Bankroll {
 
     private int balance;
 
-    //The game starts with each player having 1000 
-
+    //The game starts with each player having 1000
     public Bankroll() {
-        balance = 1000;
+        this.balance = 1000;
     }
-    
+
+
     //The bankroll can't be negative
-    
-    
-    public void changeBalance(){
-
-
-        if(balance < 0 ){
-
-            balance = 0;
+    public void checkIfBalanceBelowZero(){
+        if(this.balance < 0 ){
+            this.balance = 0;
         }
+    }
 
+    public void setBalance(int change){
+        this.balance = this.balance - change;
+        checkIfBalanceBelowZero();
     }
 
     //Get balance
-    
-    
     public int getBalance() {
-
-            return balance;
+            return this.balance;
     }
 
 }
