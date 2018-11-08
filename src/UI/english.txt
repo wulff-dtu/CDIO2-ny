@@ -46,3 +46,5 @@ You fell into a pit and lost 50
 board_goldmine_message
 You found gold in the mountains and sell it for 650, you’re rich!
 
+rules
+The players take turns rolling two dice, landing on tiles numbered 2-12. Landing on each of these tiles have a positive or negative effect on the players’ bankroll. A short text about the relevant tile is printed. The players have a bankroll of 1000 when the game starts. A player wins the game by reaching 3000.
