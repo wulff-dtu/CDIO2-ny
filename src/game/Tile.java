@@ -12,4 +12,15 @@ public class Tile {
         this.grantsExtraTurn = grantsExtraTurn;
     }
 
+    public String getMessage() {
+        return message;
+    }
+
+    public int getEffectOnBalance() {
+        return effectOnBalance;
+    }
+
+    public boolean isGrantsExtraTurn() {
+        return grantsExtraTurn;
+    }
 }

@@ -56,11 +56,11 @@ public class Game {
     }
 
     private void runTurn(Player player, Game game) {
-        new Turn(player, game); //TODO er det her nok?
+        new Turn(player, game);
     }
 
     public void endGame() {
-        System.out.println(ui.getLanguage().getMessage("end_game_message"));
+        System.out.println(ui.getLanguage().getMessage("end_game_message")); //TODO burde nok rykkes til ui
         System.out.println();
     }
 
@@ -74,5 +74,9 @@ public class Game {
 
     public Player[] getPlayers() {
         return players;
+    }
+
+    public Board getBoard() {
+        return board;
     }
 }
