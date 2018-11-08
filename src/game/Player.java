@@ -13,4 +13,11 @@ public class Player {
     public Bankroll getBankroll() {
         return bankroll;
     }
+/* denne funktion skal slettes - fungerer som placeholder for camilla te's dims*/
+    public int ChangeBankRoll(int change){
+        return change;
+
+    }
+
 }
+

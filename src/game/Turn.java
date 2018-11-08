@@ -27,9 +27,55 @@ public class Turn {
     }
 
     private void diceRollEffect(int diceValue, Player player) {
-        /**/
-
-
+        /*ChangeBankRoll skal laves om*/
+    switch(diceValue){
+        case 1:
+            System.out.println("error in diceRollEffect - you can not role a 1");
+            break;
+        case 2:
+            //Tower 		+250
+            player.ChangeBankRoll(250);
+            break;
+        case 3:
+            //Crater 		-100
+            player.ChangeBankRoll(-100);
+            break;
+        case 4:
+            //Palace gates		+100
+            player.ChangeBankRoll(100);
+            break;
+        case 5:
+            //Cold Desert	 	-20
+            player.ChangeBankRoll(-20);
+            break;
+        case 6:
+            player.ChangeBankRoll(180);
+            //Walled city 		+180
+            break;
+        case 7:
+            player.ChangeBankRoll(0);
+            //Monastery 		0
+            break;
+        case 8:
+            player.ChangeBankRoll(-70);
+            //Black cave 		-70
+            break;
+        case 9:
+            player.ChangeBankRoll(60);
+            //Huts in the mountain 		+60
+            break;
+        case 10:
+            player.ChangeBankRoll(-80);
+            //The Werewall (werewolf-wall)		-80,	men spilleren får en ekstra tur.
+            break;
+        case 11:
+                //The pit 		-50
+            player.ChangeBankRoll(-50);
+            break;
+        case 12:
+        //Goldmine 		+650
+            player.ChangeBankRoll(650);
+            break;}
     }
 
 }
