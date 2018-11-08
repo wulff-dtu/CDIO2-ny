@@ -13,6 +13,21 @@ main_menu_option3
 main_menu_option4
 4. Forlad spillet.
 
+turn_menu_header
+Tast for at vælge:
+
+turn_menu_option1
+1. Kast terningerne.
+
+turn_menu_option2
+2. Giv op.
+
+turn_menu_option3
+3. Check stillingen.
+
+end_game_message
+Spillet er slut.
+
 board_tower_message
 Yay, du fandt 250 I et tårn. Du bliver rigere!
 
