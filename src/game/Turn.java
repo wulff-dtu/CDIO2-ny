@@ -23,7 +23,7 @@ public class Turn {
                 break;
         }
 
-        diceRollEffect(diceValue, game.);
+        diceRollEffect(diceValue, player);
     }
 
     private void diceRollEffect(int diceValue, Player player) {
@@ -66,6 +66,9 @@ public class Turn {
             break;
         case 10:
             player.ChangeBankRoll(-80);
+            /* den neden under skal nok erstattes med en diceroll function*/
+            int r = (int) (Math.random() * (12 - 2)) + 2;
+            diceRollEffect(r, player);
             //The Werewall (werewolf-wall)		-80,	men spilleren får en ekstra tur.
             break;
         case 11:
