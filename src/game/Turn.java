@@ -3,13 +3,16 @@ package game;
 public class Turn {
 
     public Turn(Player player, Game game) {
-        int diceValue;
 
         int input = game.getUI().turnMenu(player); //show a turn menu and receive user input
         switch (input) {
             case 1:     //roll dice
-                diceValue = game.getDiceCup().throwDice();
-                diceRollEffect(diceValue, player, game.getBoard());
+                DiceCup diceCup = game.getDiceCup();
+                diceCup.throwDice();
+                int sum = diceCup.getSum();
+                Tile tileDestination = game.getBoard().getTiles()[sum-2];   //The tile that the player will land on.
+                player.getBankroll().adjustBalance(tileDestination.getEffectOnBalance());   //manges the effect of the tile on the player.
+                game.getUI().displayMessage(tileDestination.getMessage());  //displays the tiles message.
                 break;
             case 2:     //give up
                 game.endGame(); //TODO virker ikke
@@ -21,7 +24,7 @@ public class Turn {
                 break;
         }
     }
-
+/*
     private void diceRollEffect(int diceValue, Player player, Board board) { //TODO skal måske laves lidt om så den bruger board
         switch(diceValue){
             case 2:
@@ -58,7 +61,7 @@ public class Turn {
                 break;
             case 10:
                 player.getBankroll().adjustBalance(-80);
-                /* den neden under skal nok erstattes med en diceroll function*/
+                 den neden under skal nok erstattes med en diceroll function
                 int r = (int) (Math.random() * (12 - 2)) + 2;
                 diceRollEffect(r, player, board);
                 //The Werewall (werewolf-wall)		-80,	men spilleren får en ekstra tur.
@@ -73,5 +76,5 @@ public class Turn {
                 break;
         }
     }
-
+*/
 }
