@@ -11,7 +11,7 @@ public class Turn {
         int input = game.getUI().turnMenu(player);
         switch (input) {
             case 1:
-                diceValue = game.getDiceCup().throwDice();
+                this.diceValue = game.getDiceCup().throwDice();
                 break;
             case 2:
                 game.endGame();
@@ -80,5 +80,4 @@ public class Turn {
             player.getBankroll().setBalance(650);
             break;}
     }
-
 }

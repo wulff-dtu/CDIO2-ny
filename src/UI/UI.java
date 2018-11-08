@@ -28,11 +28,9 @@ public class UI {
 
         switch (input) {
             case 1:     //user chooses to play a game
-                scanner.close();
-                game.setupGame();
+                this.game.setupGame();
                 break;
             case 2:     //user chooses to read rules
-                scanner.close();
                 System.out.println(language.getMessage("SOMETHING")); //TODO
                 mainMenu();
                 break;
@@ -40,7 +38,6 @@ public class UI {
                 System.out.println(language.getMessage("SOMETHING")); //TODO
                 String newLanguage = scanner.next();
                 language.setCurrentLanguage(newLanguage);
-                scanner.close();
                 mainMenu();
                 break;
             case 4:     //user closes program
