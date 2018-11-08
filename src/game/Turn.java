@@ -6,7 +6,6 @@ public class Turn {
     private Game game;
 
     public Turn(Player player, Game game) {
-        this.game = game;
 
         int input = game.getUI().turnMenu(player);
         switch (input) {
