@@ -28,26 +28,26 @@ public class UI {
 
         switch (input) {
             case 1:     //user chooses to play a game
-                scanner.close();
                 game.setupGame();
                 break;
             case 2:     //user chooses to read rules
-                scanner.close();
-                System.out.println(language.getMessage("SOMETHING")); //TODO
+                System.out.println(language.getMessage("rules"));
+                System.out.println();
                 mainMenu();
                 break;
             case 3:     //user chooses to change the language
-                System.out.println(language.getMessage("SOMETHING")); //TODO
+                System.out.println(language.getMessage("change_language"));
+                System.out.println();
                 String newLanguage = scanner.next();
                 language.setCurrentLanguage(newLanguage);
-                scanner.close();
                 mainMenu();
                 break;
             case 4:     //user closes program
                 scanner.close();
                 System.exit(0);
             default:    //input not recognized
-                System.out.println(language.getMessage("SOMETHING"));
+                System.out.println(language.getMessage("input_error"));
+                System.out.println();
                 mainMenu();
                 break;
         }
