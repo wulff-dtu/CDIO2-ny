@@ -10,7 +10,7 @@ public class UI {
 
     public UI(){
         language = new Language("ENGLISH"); //English is the default language.
-        game = new Game();
+        game = new Game(this);
     }
 
     public int mainMenu() {
