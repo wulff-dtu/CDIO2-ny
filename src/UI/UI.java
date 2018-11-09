@@ -82,7 +82,7 @@ public class UI {
     }
 
     public void endGameMessage (Player player) {
-        if (player.getBankroll().getBalance() <= 3000) {
+        if (player.getBankroll().getBalance() >= 3000) {
             showScore(game);
             System.out.println();
             System.out.println(language.getMessage(player.getName() + "end_game_message1"));
