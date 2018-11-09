@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bfd456f4-c4ae-4670-a1e1-96825c3c0fa2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/inputValidator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/mangler" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -46,14 +44,14 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3950" />
+          <entry key="java" value="3974" />
           <entry key="mangler" value="53" />
           <entry key="txt" value="1313" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3950" />
+          <entry key="JAVA" value="3974" />
           <entry key="PLAIN_TEXT" value="1366" />
         </counts>
       </usages-collector>
@@ -131,8 +129,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/game/Game.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="46" selection-start-line="46" selection-end-line="46" />
+                <state relative-caret-position="272">
+                  <caret line="43" column="68" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
                   <folding>
                     <element signature="e#178#179#0" expanded="true" />
                     <element signature="e#206#207#0" expanded="true" />
@@ -344,7 +342,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541749782899" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541749833980" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -5114,12 +5112,12 @@
       <option name="project" value="LOCAL" />
       <updated>1541749142310</updated>
     </task>
-    <task id="LOCAL-00008" summary="lille ændring i Game constructor så UI altid findes">
-      <created>1541680479938</created>
+    <task id="LOCAL-00008" summary="Jeg tror alt bortset fra at skifte sprog fra hovedmenuen og at give op fra turmenuen virker nu.&#10;&#10;Der er stadig stort set ingen input-validering og ingen test">
+      <created>1541749817432</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1541680479938</updated>
+      <updated>1541749817432</updated>
     </task>
     <task id="LOCAL-00009" summary="lille ændring i Game constructor så UI altid findes">
       <created>1541683532977</created>
@@ -5149,11 +5147,11 @@
       <option name="project" value="LOCAL" />
       <updated>1541690002959</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8084000" />
+    <option name="totallyTimeSpent" value="8374000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -5168,7 +5166,7 @@
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536913" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2536913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -5177,7 +5175,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3281471" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3281471" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -5418,8 +5416,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
+        <state relative-caret-position="272">
+          <caret line="43" column="68" selection-start-line="43" selection-start-column="68" selection-end-line="43" selection-end-column="68" />
           <folding>
             <element signature="e#178#179#0" expanded="true" />
             <element signature="e#206#207#0" expanded="true" />
