@@ -2,74 +2,118 @@ package game;
 
 public class Turn {
 
+    private Game game;
+
     public Turn(Player player, Game game) {
+        this.game = game;
         int diceValue;
 
-        int input = game.getUI().turnMenu(player); //show a turn menu and receive user input
+        int input = this.game.getUI().turnMenu(player); //show a turn menu and receive user input
         switch (input) {
             case 1:     //roll dice
-                diceValue = game.getDiceCup().throwDice();
-                diceRollEffect(diceValue, player, game.getBoard());
+                diceValue = this.game.getDiceCup().throwDice();
+                diceRollEffect(diceValue, player);
                 break;
             case 2:     //give up
-                game.endGame(); //TODO virker ikke
+                this.game.endGame(); //TODO virker ikke
                 break;
             case 3:     //show score
-                game.getPlayers(); //TODO færdiggør
+                this.game.getPlayers(); //TODO færdiggør
                 break;
             default:
                 break;
         }
     }
 
-    private void diceRollEffect(int diceValue, Player player, Board board) { //TODO skal måske laves lidt om så den bruger board
+    private void diceRollEffect(int diceValue, Player player) { //TODO skal måske laves lidt om så den bruger board
         switch(diceValue){
             case 2:
                 //Tower 		+250
-                player.getBankroll().adjustBalance(250);
+                System.out.println(game.getBoard().getTiles()[2].getMessage());
+                player.getBankroll().adjustBalance(game.getBoard().getTiles()[2].getEffectOnBalance());
+                if (game.getBoard().getTiles()[2].isGrantsExtraTurn() == true) {
+                    game.runTurn(player, game);
+                }
                 break;
             case 3:
                 //Crater 		-100
-                player.getBankroll().adjustBalance(-100);
+                System.out.println(game.getBoard().getTiles()[3].getMessage());
+                player.getBankroll().adjustBalance(game.getBoard().getTiles()[2].getEffectOnBalance());
+                if (game.getBoard().getTiles()[3].isGrantsExtraTurn() == true) {
+                    game.runTurn(player, game);
+                }
                 break;
             case 4:
                 //Palace gates		+100
-                player.getBankroll().adjustBalance(100);
+                System.out.println(game.getBoard().getTiles()[4].getMessage());
+                player.getBankroll().adjustBalance(game.getBoard().getTiles()[2].getEffectOnBalance());
+                if (game.getBoard().getTiles()[4].isGrantsExtraTurn() == true) {
+                    game.runTurn(player, game);
+                }
                 break;
             case 5:
                 //Cold desert	 	-20
-                player.getBankroll().adjustBalance(-20);
+                System.out.println(game.getBoard().getTiles()[5].getMessage());
+                player.getBankroll().adjustBalance(game.getBoard().getTiles()[2].getEffectOnBalance());
+                if (game.getBoard().getTiles()[5].isGrantsExtraTurn() == true) {
+                    game.runTurn(player, game);
+                }
                 break;
             case 6:
-                player.getBankroll().adjustBalance(180);
                 //Walled city 		+180
+                System.out.println(game.getBoard().getTiles()[6].getMessage());
+                player.getBankroll().adjustBalance(game.getBoard().getTiles()[2].getEffectOnBalance());
+                if (game.getBoard().getTiles()[6].isGrantsExtraTurn() == true) {
+                    game.runTurn(player, game);
+                }
                 break;
             case 7:
-                player.getBankroll().adjustBalance(0);
                 //Monastery 		0
+                System.out.println(game.getBoard().getTiles()[7].getMessage());
+                player.getBankroll().adjustBalance(game.getBoard().getTiles()[2].getEffectOnBalance());
+                if (game.getBoard().getTiles()[7].isGrantsExtraTurn() == true) {
+                    game.runTurn(player, game);
+                }
                 break;
             case 8:
-                player.getBankroll().adjustBalance(-70);
                 //Black cave 		-70
+                System.out.println(game.getBoard().getTiles()[7].getMessage());
+                player.getBankroll().adjustBalance(game.getBoard().getTiles()[2].getEffectOnBalance());
+                if (game.getBoard().getTiles()[8].isGrantsExtraTurn() == true) {
+                    game.runTurn(player, game);
+                }
                 break;
             case 9:
-                player.getBankroll().adjustBalance(60);
                 //Huts in the mountain 		+60
+                System.out.println(game.getBoard().getTiles()[9].getMessage());
+                player.getBankroll().adjustBalance(game.getBoard().getTiles()[2].getEffectOnBalance());
+                if (game.getBoard().getTiles()[9].isGrantsExtraTurn() == true) {
+                    game.runTurn(player, game);
+                }
                 break;
             case 10:
-                player.getBankroll().adjustBalance(-80);
-                /* den neden under skal nok erstattes med en diceroll function*/
-                int r = (int) (Math.random() * (12 - 2)) + 2;
-                diceRollEffect(r, player, board);
                 //The Werewall (werewolf-wall)		-80,	men spilleren får en ekstra tur.
+                System.out.println(game.getBoard().getTiles()[10].getMessage());
+                player.getBankroll().adjustBalance(game.getBoard().getTiles()[2].getEffectOnBalance());
+                if (game.getBoard().getTiles()[10].isGrantsExtraTurn() == true) {
+                    game.runTurn(player, game);
+                }
                 break;
             case 11:
-                    //The pit 		-50
-                player.getBankroll().adjustBalance(-50);
+                //The pit 		-50
+                System.out.println(game.getBoard().getTiles()[11].getMessage());
+                player.getBankroll().adjustBalance(game.getBoard().getTiles()[2].getEffectOnBalance());
+                if (game.getBoard().getTiles()[11].isGrantsExtraTurn() == true) {
+                    game.runTurn(player, game);
+                }
                 break;
             case 12:
             //Goldmine 		+650
-                player.getBankroll().adjustBalance(650);
+                System.out.println(game.getBoard().getTiles()[12].getMessage());
+                player.getBankroll().adjustBalance(game.getBoard().getTiles()[2].getEffectOnBalance());
+                if (game.getBoard().getTiles()[12].isGrantsExtraTurn() == true) {
+                    game.runTurn(player, game);
+                }
                 break;
         }
     }

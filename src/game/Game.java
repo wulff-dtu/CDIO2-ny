@@ -55,7 +55,7 @@ public class Game {
         } while (!winnerFound);
     }
 
-    private void runTurn(Player player, Game game) {
+    public void runTurn(Player player, Game game) {
         new Turn(player, game);
     }
 
