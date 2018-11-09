@@ -17,7 +17,7 @@ public class Player {
     public String getName() {
         return name;
     }
-/* denne funktion skal slettes - fungerer som placeholder for camilla te's dims
+/* denne funktion skal måske slettes - fungerer som placeholder for camilla te's dims
     public int getBankroll().adjustBalance(int change){
         return change;
 
