@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="bfd456f4-c4ae-4670-a1e1-96825c3c0fa2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UI/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UI/inputValidator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Turn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mangler" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,27 +34,27 @@
         <counts>
           <entry key="gitignore" value="1" />
           <entry key="java" value="35" />
-          <entry key="mangler" value="1" />
+          <entry key="mangler" value="2" />
           <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="35" />
-          <entry key="PLAIN_TEXT" value="17" />
+          <entry key="PLAIN_TEXT" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="3918" />
+          <entry key="java" value="3950" />
           <entry key="mangler" value="53" />
-          <entry key="txt" value="1142" />
+          <entry key="txt" value="1313" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="3918" />
-          <entry key="PLAIN_TEXT" value="1195" />
+          <entry key="JAVA" value="3950" />
+          <entry key="PLAIN_TEXT" value="1366" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -131,8 +131,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/game/Game.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="404">
-                  <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+                <state relative-caret-position="340">
+                  <caret line="46" selection-start-line="46" selection-end-line="46" />
                   <folding>
                     <element signature="e#178#179#0" expanded="true" />
                     <element signature="e#206#207#0" expanded="true" />
@@ -344,7 +344,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541749037397" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1541749782899" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -5107,12 +5107,12 @@
       <option name="project" value="LOCAL" />
       <updated>1541748655386</updated>
     </task>
-    <task id="LOCAL-00007" summary="I denne branch kører spillet ca. sådan her:&#10;- Main laver et UI (der laver en Game, der ikke indeholder noget)&#10;- Main får UI til at køre en mainMenu-metode&#10;- når &quot;start spillet&quot; vælges, køres setupGame i den Game, der blev lavet af UI&#10;- derefter køres runGame, der looper ved at lave ture, indtil der er fundet en vinder&#10;&#10;Det er som sagt bare et forslag. Der er sikkert flere ting, der kan gøres bedre og mere rigtigt">
-      <created>1541621356674</created>
+    <task id="LOCAL-00007" summary="Jeg tror alt bortset fra at skifte sprog fra hovedmenuen og at give op fra turmenuen virker nu.&#10;&#10;Der er stadig stort set ingen input-validering og ingen test">
+      <created>1541749142310</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1541621356674</updated>
+      <updated>1541749142310</updated>
     </task>
     <task id="LOCAL-00008" summary="lille ændring i Game constructor så UI altid findes">
       <created>1541680479938</created>
@@ -5149,11 +5149,11 @@
       <option name="project" value="LOCAL" />
       <updated>1541690002959</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7516000" />
+    <option name="totallyTimeSpent" value="8084000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -5168,7 +5168,7 @@
     <frame x="-7" y="-7" width="1550" height="840" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.2536913" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2536913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -5239,7 +5239,8 @@
     <MESSAGE value="kun lidt&#10;småfix" />
     <MESSAGE value="noget virker, men ikke spillet" />
     <MESSAGE value="en del virker nu" />
-    <option name="LAST_COMMIT_MESSAGE" value="en del virker nu" />
+    <MESSAGE value="Jeg tror alt bortset fra at skifte sprog fra hovedmenuen og at give op fra turmenuen virker nu.&#10;&#10;Der er stadig stort set ingen input-validering og ingen test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jeg tror alt bortset fra at skifte sprog fra hovedmenuen og at give op fra turmenuen virker nu.&#10;&#10;Der er stadig stort set ingen input-validering og ingen test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -5408,10 +5409,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/mangler">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="63" column="20" lean-forward="true" selection-start-line="63" selection-start-column="20" selection-end-line="63" selection-end-column="20" />
+        <state relative-caret-position="340">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="e#178#179#0" expanded="true" />
             <element signature="e#206#207#0" expanded="true" />

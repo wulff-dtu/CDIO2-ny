@@ -41,9 +41,9 @@ public class Game {
 
             if (players[currentPlayerArrayIndex].getBankroll().getBalance() >= 3000) {
                 winnerFound = true;
-                game.endCurrentGame();
+                game.endCurrentGame(); //TODO virker dette ordentligt?
             } else {
-                switch (currentPlayerArrayIndex) { //er der en mere elegant måde at gøre dette på?
+                switch (currentPlayerArrayIndex) {
                     case 0:
                         currentPlayerArrayIndex = 1;
                         break;
