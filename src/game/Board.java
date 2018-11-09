@@ -7,7 +7,7 @@ public class Board {
     private Tile[] tiles;
 
     public Board(Language language) {
-        tiles = new Tile[12];
+        tiles = new Tile[13];
         tiles[0] = new Tile ("dummy tile", 0, false);
         tiles[1] = new Tile ("dummy tile", 0, false);
         tiles[2] = new Tile(language.getMessage("board_tower_message"), 250, false);

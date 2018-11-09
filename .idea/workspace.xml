@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="bfd456f4-c4ae-4670-a1e1-96825c3c0fa2" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Bankroll.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Bankroll.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Board.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Board.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/Turn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/Turn.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,15 +43,15 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="4431" />
+          <entry key="java" value="4474" />
           <entry key="mangler" value="53" />
-          <entry key="txt" value="1231" />
+          <entry key="txt" value="1254" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="4431" />
-          <entry key="PLAIN_TEXT" value="1284" />
+          <entry key="JAVA" value="4474" />
+          <entry key="PLAIN_TEXT" value="1307" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages">
@@ -170,8 +166,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/game/Turn.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+                <state relative-caret-position="663">
+                  <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
                 </state>
               </provider>
             </entry>
@@ -343,7 +339,7 @@
       <workItem from="1541617925152" duration="3530000" />
       <workItem from="1541680314218" duration="225000" />
       <workItem from="1541704628350" duration="6302000" />
-      <workItem from="1541746754153" duration="820000" />
+      <workItem from="1541746754153" duration="1082000" />
     </task>
     <task id="LOCAL-00001" summary="virker det?">
       <created>1541691948159</created>
@@ -394,12 +390,12 @@
       <option name="project" value="LOCAL" />
       <updated>1541710907692</updated>
     </task>
-    <task id="LOCAL-00008" summary="lille ændring i Game constructor så UI altid findes">
-      <created>1541680479938</created>
+    <task id="LOCAL-00008" summary="måske virker det nu">
+      <created>1541747839328</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1541680479938</updated>
+      <updated>1541747839328</updated>
     </task>
     <task id="LOCAL-00009" summary="lille ændring i Game constructor så UI altid findes">
       <created>1541683532977</created>
@@ -429,11 +425,11 @@
       <option name="project" value="LOCAL" />
       <updated>1541690002959</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9505000" />
+    <option name="totallyTimeSpent" value="9767000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -519,7 +515,8 @@
     <MESSAGE value="kun lidt&#10;småfix" />
     <MESSAGE value="noget virker, men ikke spillet" />
     <MESSAGE value="Main menu virker, bortset fra at skifte sprog.&#10;&#10;Spillet kører, men der sker ikke rigtig noget." />
-    <option name="LAST_COMMIT_MESSAGE" value="Main menu virker, bortset fra at skifte sprog.&#10;&#10;Spillet kører, men der sker ikke rigtig noget." />
+    <MESSAGE value="måske virker det nu" />
+    <option name="LAST_COMMIT_MESSAGE" value="måske virker det nu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -682,8 +679,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/game/Turn.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="34" column="47" lean-forward="true" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
+        <state relative-caret-position="663">
+          <caret line="39" column="63" selection-start-line="39" selection-start-column="63" selection-end-line="39" selection-end-column="63" />
         </state>
       </provider>
     </entry>
