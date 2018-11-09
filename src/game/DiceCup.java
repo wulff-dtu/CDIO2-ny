@@ -12,13 +12,14 @@ public class DiceCup {
         }
     }
 
-    public void throwDice() {
+    public int throwDice() {
         int accumlatedSum = 0;
         for (Die die : dice) {
             die.throwDie();
             accumlatedSum += die.getValue();
         }
         sum = accumlatedSum;
+        return sum;
     }
 
     public int getSum() {
