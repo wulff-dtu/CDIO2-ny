@@ -82,6 +82,10 @@ public class UI {
 
     }
 
+    public void displayMessage(String messageID) {
+        System.out.println(language.getMessage(messageID));
+    }
+
     public Language getLanguage() {
         return language;
     }
