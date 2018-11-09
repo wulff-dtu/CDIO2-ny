@@ -82,11 +82,16 @@ public class UI {
     }
 
     public void endGameMessage (Player player) {
-        showScore(game);
-        System.out.println();
-        System.out.println(language.getMessage(player.getName() + "end_game_message1"));
-        System.out.println(language.getMessage("end_game_message1"));
-        System.out.println();
+        if (player.getBankroll().getBalance() <= 3000) {
+            showScore(game);
+            System.out.println();
+            System.out.println(language.getMessage(player.getName() + "end_game_message1"));
+            System.out.println(language.getMessage("end_game_message1"));
+            System.out.println();
+        } else {
+            System.out.println(language.getMessage("end_game_message1"));
+            System.out.println();
+        }
     }
 
     public Language getLanguage() {
