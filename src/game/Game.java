@@ -41,7 +41,7 @@ public class Game {
 
             if (players[currentPlayerArrayIndex].getBankroll().getBalance() >= 3000) {
                 winnerFound = true;
-                game.endGame();
+                game.endCurrentGame();
             } else {
                 switch (currentPlayerArrayIndex) { //er der en mere elegant måde at gøre dette på?
                     case 0:
@@ -59,9 +59,9 @@ public class Game {
         new Turn(player, game);
     }
 
-    public void endGame() {
-        System.out.println(ui.getLanguage().getMessage("end_game_message")); //TODO burde nok rykkes til ui
-        System.out.println();
+    public void endCurrentGame() {
+        ui.endGameMessage();
+        setupGame();
     }
 
     public DiceCup getDiceCup() {

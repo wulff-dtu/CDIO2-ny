@@ -79,7 +79,11 @@ public class UI {
         for (int i=0; i < game.getPlayers().length; i++){
             System.out.println(game.getPlayers()[i].getName() + ": " + game.getPlayers()[i].getBankroll().getBalance());
         }
+    }
 
+    public void endGameMessage () {
+        System.out.println(language.getMessage("end_game_message"));
+        System.out.println();
     }
 
     public Language getLanguage() {
