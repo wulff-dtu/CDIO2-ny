@@ -18,14 +18,14 @@ public class Turn {
                 this.game.endGame(); //TODO virker ikke
                 break;
             case 3:     //show score
-                this.game.getPlayers(); //TODO færdiggør
+                this.game.getUI().showScore(this.game);
                 break;
             default:
                 break;
         }
     }
 
-    private void diceRollEffect(int diceValue, Player player) { //TODO skal måske laves lidt om så den bruger board
+    private void diceRollEffect(int diceValue, Player player) {
         switch(diceValue){
             case 2:
                 //Tower 		+250

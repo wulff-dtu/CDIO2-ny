@@ -62,7 +62,7 @@ public class UI {
         return input;
     }
 
-    public void showRules() {
+    private void showRules() {
         System.out.println();
         System.out.println(language.getMessage("rules1"));
         System.out.println(language.getMessage("rules2"));
@@ -71,7 +71,7 @@ public class UI {
         System.out.println();
     }
 
-    public void languagePrompt() {
+    private void languagePrompt() {
         System.out.println(language.getMessage("change_language"));
     }
 
@@ -80,10 +80,6 @@ public class UI {
             System.out.println(game.getPlayers()[i].getName() + ": " + game.getPlayers()[i].getBankroll().getBalance());
         }
 
-    }
-
-    public void displayMessage(String messageID) {
-        System.out.println(language.getMessage(messageID));
     }
 
     public Language getLanguage() {
