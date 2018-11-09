@@ -15,7 +15,7 @@ public class Turn {
                 diceRollEffect(diceValue, player);
                 break;
             case 2:     //give up
-                this.game.endCurrentGame(); //TODO virker ikke
+                this.game.endCurrentGame(player); //TODO virker ikke
                 break;
             case 3:     //show score
                 this.game.getUI().showScore(this.game);
