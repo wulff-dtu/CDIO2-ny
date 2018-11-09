@@ -41,7 +41,7 @@ public class Game {
 
             if (players[currentPlayerArrayIndex].getBankroll().getBalance() >= 3000) {
                 winnerFound = true;
-                game.endCurrentGame(); //TODO virker ikke ordentligt
+                game.endCurrentGame(players[currentPlayerArrayIndex]);
             } else {
                 switch (currentPlayerArrayIndex) {
                     case 0:
@@ -59,9 +59,9 @@ public class Game {
         new Turn(player, game);
     }
 
-    public void endCurrentGame() {
-        ui.endGameMessage();
-        setupGame();
+    public void endCurrentGame(Player player) {
+        ui.endGameMessage(player);
+        ui.mainMenu();
     }
 
     public DiceCup getDiceCup() {

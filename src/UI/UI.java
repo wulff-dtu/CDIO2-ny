@@ -81,8 +81,11 @@ public class UI {
         }
     }
 
-    public void endGameMessage () {
-        System.out.println(language.getMessage("end_game_message"));
+    public void endGameMessage (Player player) {
+        showScore(game);
+        System.out.println();
+        System.out.println(language.getMessage(player.getName() + "end_game_message1"));
+        System.out.println(language.getMessage("end_game_message1"));
         System.out.println();
     }
 

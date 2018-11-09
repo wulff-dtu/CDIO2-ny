@@ -25,7 +25,10 @@ turn_menu_option2
 turn_menu_option3
 3. Check stillingen.
 
-end_game_message
+en_game_message1
+, du vinder!
+
+end_game_message2
 Spillet er slut.
 
 board_tower_message

@@ -25,7 +25,10 @@ turn_menu_option2
 turn_menu_option3
 3. Check the score.
 
-end_game_message
+eng_game_message1
+, you win!
+
+end_game_message2
 The game is over.
 
 board_tower_message
