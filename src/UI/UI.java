@@ -18,6 +18,11 @@ public class UI {
     /**
      * Displays the main menu and performs relevant actions based on user input.
      */
+
+    public String promptMainMenu() {
+        return "";
+    }
+
     public void mainMenu() {
         MainMenu menu = new MainMenu();
         menu.displayMenu(this);

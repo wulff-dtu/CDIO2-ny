@@ -5,11 +5,17 @@ public class DiceCup {
     private Die[] dice;
     private int sum; //combined sum of the dice
 
-    public DiceCup(int numOfDice) {
-        dice = new Die[numOfDice];
-        for(int i = 0; i < numOfDice; i++) {
-            dice[i] = new Die();
+    public void addDie(int sides) {
+        Die[] newDice = new Die[dice.length + 1];
+        for (int i = 0; i < dice.length; i++) {
+            newDice[i] = dice[i];
         }
+        newDice[dice.length] = new Die(sides);
+        dice = newDice;
+    }
+
+    public void removeAllDice() {
+        dice = new Die[0];
     }
 
     public void throwDice() {

@@ -1,25 +1,19 @@
 package game;
 
-import java.util.Random;
-
 public class Die {
 
-    private int value;
+    private int sides, value;
 
-    public Die() {
+    public Die(int sides) {
+        this.sides = sides;
     }
 
     public int throwDie() {
-        // Numbers of sides on the Die is set below this line
-       value = (int)(Math.random()*6+1);
-       return value;
+        value = (int) (Math.random() * sides + 1);
+        return value;
     }
 
     public int getValue() {
         return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
     }
 }

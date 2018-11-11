@@ -11,15 +11,15 @@ public class Bankroll {
 
 
     //The bankroll can't be negative
-    public void checkIfBalanceBelowZero(){
+    public void checkIfNegative(){
         if(this.balance < 0 ){
             this.balance = 0;
         }
     }
 
-    public void adjustBalance(int change){
-        this.balance -= change;
-        checkIfBalanceBelowZero();
+    public void changeBalance(int change){
+        this.balance += change;
+        checkIfNegative();
     }
 
     //Get balance

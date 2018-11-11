@@ -20,7 +20,7 @@ public class Tile {
         return effectOnBalance;
     }
 
-    public boolean isGrantsExtraTurn() {
+    public boolean grantsExtraTurn() {
         return grantsExtraTurn;
     }
 }
