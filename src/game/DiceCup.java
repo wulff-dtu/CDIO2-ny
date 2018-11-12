@@ -3,7 +3,11 @@ package game;
 public class DiceCup {
 
     private Die[] dice;
-    private int sum; //combined sum of the dice
+    private int sum;
+
+    public DiceCup() {
+        dice = new Die[0];
+    }
 
     public void addDie(int sides) {
         Die[] newDice = new Die[dice.length + 1];

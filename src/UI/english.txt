@@ -20,13 +20,16 @@ turn_menu_option1
 1. Roll the dice.
 
 turn_menu_option2
-2. Give up.
+2. Check the score.
 
 turn_menu_option3
-3. Check the score.
+3. End game.
 
-end_game_message
-The game is over.
+end_game_congratulations
+Congratulations,
+
+end_game_youwon
+you won the game!
 
 board_tower_message
 Yay, you found 250 in a tower. Getting richer!
@@ -61,20 +64,23 @@ You fell into a pit and lost 50
 board_goldmine_message
 You found gold in the mountains and sell it for 650, you’re rich!
 
-rules1
-The players take turns rolling two dice, landing on tiles numbered 2-12.
+rules
+The players take turns rolling two dice, landing on tiles numbered 2-12. Landing on each of these tiles have a positive or negative effect on the players’ bankroll. The players have a bankroll of 1000 when the game starts. A player wins the game by reaching 3000.
 
-rules2
-Landing on each of these tiles have a positive or negative effect on the players’
+change_language_header
+Please choose your language:
 
-rules3
-bankroll. A short text about the relevant tile is printed. The players have a
+change_language_english
+1. English
 
-rules4
-bankroll of 1000 when the game starts. A player wins the game by reaching 3000.
+change_language_danish
+2. Danish
 
-change_language
-Please enter another language (english/danish).
+invalid_input
+Invalid input. Try again.
 
-input_error
-Input not recognized.
+main_start_howmanyplayers
+Please enter number of players (2-4):
+
+main_start_writeplayername
+Please enter the name of player

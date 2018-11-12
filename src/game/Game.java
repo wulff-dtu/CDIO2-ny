@@ -5,17 +5,19 @@ public class Game {
     private Player[] players;
     private Board board;
     private DiceCup diceCup;
+    private Turn turn;
+    private int playerTurnIndex;
     private boolean winnerFound;
 
     public Game(String[] playerNames) {
         addPlayers(playerNames);
         shufflePlayerIndex(players.length); //"players.length" is an arbitrary number of times. Could be many more.
+        playerTurnIndex = 0;
         board = new Board();
         diceCup = new DiceCup();
         diceCup.addDie(6);
         diceCup.addDie(6);
         winnerFound = false;
-        startGame();
     }
 
     private void addPlayers(String[] playerNames) {
@@ -25,14 +27,11 @@ public class Game {
         }
     }
 
-    public void startGame() {
-        int currentPlayerIndex = 0;
-        Player currentPlayer = players[currentPlayerIndex];
-        do {
-            new Turn(currentPlayer);
-            currentPlayerIndex++;
-            if (currentPlayerIndex == players.length - 1) currentPlayerIndex = 0;
-        } while (!winnerFound);
+    public void newTurn() {
+        turn = new Turn(players[playerTurnIndex], board, diceCup);
+        if (players[playerTurnIndex].getBankroll().getBalance() >= 1200) winnerFound = true;
+        playerTurnIndex++;
+        if (playerTurnIndex == players.length) playerTurnIndex = 0;
     }
 
     private void shufflePlayerIndex(int times) {
@@ -46,15 +45,23 @@ public class Game {
         }
     }
 
-    public DiceCup getDiceCup() {
-        return diceCup;
-    }
-
     public Player[] getPlayers() {
         return players;
     }
 
-    public Board getBoard() {
-        return board;
+    public boolean isWinnerFound() {
+        return winnerFound;
+    }
+
+    public Turn getTurn() {
+        return turn;
+    }
+
+    public int getPlayerTurnIndex() {
+        return playerTurnIndex;
+    }
+
+    public void setPlayerTurnIndex(int playerTurnIndex) {
+        this.playerTurnIndex = playerTurnIndex;
     }
 }

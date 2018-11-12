@@ -20,13 +20,16 @@ turn_menu_option1
 1. Kast terningerne.
 
 turn_menu_option2
-2. Giv op.
+2. Check stillingen.
 
 turn_menu_option3
-3. Check stillingen.
+3. End game.
 
-end_game_message
-Spillet er slut.
+end_game_congratulations
+Tillykke,
+
+end_game_youwon
+du vandt!
 
 board_tower_message
 Yay, du fandt 250 I et tårn. Du bliver rigere!
@@ -61,20 +64,23 @@ Du faldt ned i en skakt og mistede 50
 board_goldmine_message
 Du har fundet guld i bjergene og sælger det for 650, du er rig!
 
-rules1
-Spillerne slår på skift med 2 terninger og lander på et felt med numrene fra 2 - 12.
+rules
+Spillerne slår på skift med 2 terninger og lander på et felt med numrene fra 2 - 12. At lande på hvert af disse felter har en positiv eller negativ effekt på spillernes pengebeholdning. Spillerne begynder spillet med en pengebeholdning på 1000. En spiller vinder spillet ved at nå 3000.
 
-rules2
-At lande på hvert af disse felter har en positiv eller negativ effekt på spillernes
+change_language_header
+Vælg sprog:
 
-rules3
-pengebeholdning. Der udskrives en kort tekst om det aktuelle felt. Spillerne begynder
+change_language_english
+1. Engelsk
 
-rules4
-spillet med en pengebeholdning på 1000. En spiller vinder spillet ved at nå 3000.
+change_language_danish
+2. Dansk
 
-change_language
-Skriv hvilket sprog, du ønsker (english/danish).
+invalid_input
+Ugyldigt input. Prøv igen.
 
-input_error
-Forstår ikke kommandoen.
+main_start_howmanyplayers
+Skriv antal af spillere (2-4):
+
+main_start_writeplayername
+Indtast navn på spiller
